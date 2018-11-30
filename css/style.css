@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+/*header with menu*/
+
+header {
+    background: #000;
+    color: #FFF;
+    padding: 5px 0;
+}
+header .container h1 {
+    text-transform: uppercase;
+    width:70%;
+}
+header .container span {
+    color: blue;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+header .container ul {
+    list-style: none;
+    width:30%;
+}
+header .container ul li {
+    display: inline-block;
+}
+header .container ul li a {
+    display: block;
+    padding: 10px;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*section with slider*/
+
+section .container ul {
+    list-style: none;
+    display: flex;
+}
+section ul li {
+    width: 50%;
+    height: 200px;
+    background: #FFF;
+}
+section .slider .image {
+    height: 600px;
+    background: gray url("../images/black_chair.png") no-repeat center/cover;
+}
+
+section .slider .text {
+    text-align: center;
+}
+section .container .text span{
+    color: blue;
+}
+
+section ul .text h1{
+    text-transform: uppercase;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+footer {
+    padding: 10px 0;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+footer .container .logo ul li a{
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
