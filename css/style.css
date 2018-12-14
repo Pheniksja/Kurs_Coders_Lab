@@ -4,38 +4,40 @@
 }
 
 body {
-    font-family: Arial, Verdana, sans-serif;
+    font-family: 'ralewayregular' ,  Arial, sans-serif;
+}
+
+/*HEADER*/
+header {
+    background: #000;
+    width:100%;
+
+    color: #FFF;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
     /*border: 1px solid black;*/
-    box-sizing: border-box;
-}
-/*header with menu*/
-
-header {
-    background: #000;
-    color: #FFF;
-    padding: 15px 0;
-    width:100%;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.text_color {
-    color: rgb(116, 232, 206);
-    font-weight: bold;
-}
-
-header .container {
     display: flex;
     justify-content: space-between;
+    /*box-sizing: border-box;*/
 }
+/* menu*/
+
+.text_logo {
+    color: rgb(116, 232, 206);
+    font-weight: bold;
+    font-size: 22px;
+}
+
 header .container ul {
     list-style: none;
     display:block;
+    margin: 15px;
     width:30%;
 }
 header .container ul li {
@@ -92,6 +94,7 @@ header .container ul li a {
     font-size: 20px;
     margin:0 30px;
     line-height: 30px;
+
 }
 
 #slider ul .slider_text  #button {
@@ -119,34 +122,47 @@ header .container ul li a {
     text-decoration: none;
     text-transform: uppercase;
 }
+/*offer - */
 #offer {
     width: 100%;
     display: flex;
     /*padding: 50px;*/
     box-sizing: border-box;
+    height: 350px;
     }
 
 #offer .container div {
     justify-content: space-between;
     width: 31%;
-    height: 225px;
+    height: 238px;
     border: 1px solid lightgrey;
     display: inline-block;
-    padding:10px;
+    margin-top: 25px;
 }
 
 .offer_article1 {
     background-image: url("../images/box1_img.jpg") ;
+    background-size: contain;
 
 }
 
 .offer_article2 {
     background-image: url("../images/box2_img.jpg");
+    background-size: contain;
+    margin-right: 35px;
+    margin-left: 35px;
 
 }
 
 #offer .container .offer_article3 {
+    box-sizing: border-box;
 
+}
+
+#offer .container .offer_article3 p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 35px;
 }
 
 
