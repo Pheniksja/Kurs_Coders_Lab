@@ -134,15 +134,21 @@ header .container ul li a {
 #offer .container div {
     justify-content: space-between;
     width: 31%;
-    height: 238px;
+    height: 252px;
     border: 1px solid lightgrey;
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 35px;
+}
+
+.underlineTitle {
+    border-bottom: 4px solid #24BAA0;
+    width: 130px;
 }
 
 .offer_article1 {
     background-image: url("../images/box1_img.jpg") ;
     background-size: contain;
+    font-weight: bold;
 
 }
 
@@ -151,23 +157,140 @@ header .container ul li a {
     background-size: contain;
     margin-right: 35px;
     margin-left: 35px;
-
+    font-weight: bold;
 }
 
-#offer .container .offer_article3 {
+#offer .container .offer_article3 .text_article3 {
     box-sizing: border-box;
+    padding-top: 35px;
+    font-weight: bold;
 
 }
 
-#offer .container .offer_article3 p {
+#offer .container .offer_article3 .text_article3  {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 35px;
 }
+.text_article3 underlineTitle{
+    width: 137px;
+    /*font-weight: bold;*/
+}
+
+/*priceList*/
+
+.priceList {
+    background: #f1f1f1;
+    width: 100%;
+    height: 720px;
+    padding-top: 45px;
+}
 
 
+.pricing {
+    text-transform: uppercase;
+    width: 1200px;
+    margin: 0 auto;
+}
+.pricing p {
+    border-bottom: 7px solid #24BAA0;
+    width: 360px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
 
+.priceList .container .priceBox {
+    justify-content: space-between;
+    /*border: 3px solid white;*/
+    width: 31%;
+    height: 500px;
+    border: 1px solid lightgrey;
+    display: inline-block;
+    text-align: center;
+    margin-top: 80px;
+    background-color: white;
+    margin-top: 25px;
+    position: relative; //!!!
+}
 
+.priceBox h2 {
+    text-transform: uppercase;
+    color: #24BAA0;
+    font-size: 25px;
+    margin-top: 27px;
+    font-weight: bold;
+}
+.price {
+    left: 117px;
+    top: 80px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    padding: 20px;
+    position: absolute;
+}
+.price p:first-child {
+    font-size: 40px;
+    font-weight: bold;
+    color: #d6d5d5;
+    position: relative;
+    top: 6px;
+
+    transition: 0.2s all;
+}
+.price p:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d6d5d5;
+    position: relative;
+    top: 8px;
+    text-transform: uppercase;
+}
+.priceOffer1 {
+    font-size: 25px;
+    margin-top: 207px;
+    font-weight: bold;
+    background:#F0F0F0;
+    color:darkslategray;
+    padding: 15px;
+}
+.priceOffer2 {
+    font-size: 25px;
+    /*margin-top: 20px;*/
+    font-weight: bold;
+    background:;
+    color:darkslategray;
+    padding: 15px;
+}
+.priceButton {
+    color: white;
+    /*width: 50px;*/
+    /*height: 60px;*/
+    padding: 10px 14px 10px 14px;
+    border-radius:20px;
+    /*display: inline-block;*/
+    font-size: 25px;
+    /*text-decoration: none;*/
+    text-transform: uppercase;
+    border: 1px solid gray;
+
+    background-color: #00C9AA;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 18px;
+    left: calc(50% - 100px);
+    font-size: 20px;
+
+}
 
 /*footer {*/
     /*padding: 10px 0;*/
