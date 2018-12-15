@@ -31,7 +31,6 @@ header {
 .text_logo {
     color: rgb(116, 232, 206);
     font-weight: bold;
-    font-size: 22px;
 }
 
 header .container ul {
@@ -88,20 +87,24 @@ header .container ul li a {
     font-size: 42px;
 }
 
+.text_color span {
+    font-weight: bold;
+}
+
 #slider ul .slider_text  p{
     padding: 5px;
     box-sizing: border-box;
     font-size: 20px;
     margin:0 30px;
     line-height: 30px;
-
 }
+
 
 #slider ul .slider_text  #button {
     background-color: rgb(116, 232, 206);
     width: 350px;
     height: 60px;
-    padding: 10px 14px 10px 14px;
+    padding: 8px 0px 0px 0px;
     border-radius:10px;
     display: inline-block;
     font-size: 25px;
@@ -416,20 +419,39 @@ header .container ul li a {
     text-decoration: none;
 }
 
+/*footer*/
 
-/*footer {*/
-    /*padding: 10px 0;*/
-/*}*/
-/*footer .container {*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*padding: 10px 0;*/
-/*}*/
+footer {
+    padding: 15px 0;
+}
+footer .container div{
+    display: flex;
+    justify-content: space-between;
+}
 
-/*footer .container .logo ul li a{*/
-    /*padding: 10px;*/
-    /*text-decoration: none;*/
-    /*text-transform: uppercase;*/
-/*}*/
+footer .logo {
+    display: flex;
+    justify-content: space-around;
+}
+footer .logo ul li a{
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #939393;
+}
 
+.socialIcons {
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    margin-right: 130px;
+    margin-top: -11px;
+}
 
+footer .logo ul li {
+    list-style: none;
+}
+
+footer .logo ul li span{
+    font-weight: 900;
+}
