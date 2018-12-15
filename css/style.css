@@ -188,7 +188,6 @@ header .container ul li a {
 
 
 .pricing {
-    text-transform: uppercase;
     width: 1200px;
     margin: 0 auto;
 }
@@ -198,20 +197,20 @@ header .container ul li a {
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .priceList .container .priceBox {
     justify-content: space-between;
-    /*border: 3px solid white;*/
     width: 31%;
-    height: 500px;
+    height: 600px;
     border: 1px solid lightgrey;
     display: inline-block;
     text-align: center;
     margin-top: 80px;
     background-color: white;
     margin-top: 25px;
-    position: relative; //!!!
+    position: relative;
 }
 
 .priceBox h2 {
@@ -227,7 +226,7 @@ header .container ul li a {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid lightgrey;
+    border: 4px solid lightgrey;
     padding: 20px;
     position: absolute;
 }
@@ -237,8 +236,6 @@ header .container ul li a {
     color: #d6d5d5;
     position: relative;
     top: 6px;
-
-    transition: 0.2s all;
 }
 .price p:last-child {
     font-size: 16px;
@@ -250,47 +247,175 @@ header .container ul li a {
 }
 .priceOffer1 {
     font-size: 25px;
-    margin-top: 207px;
+    margin-top: 200px;
     font-weight: bold;
-    background:#F0F0F0;
+    background-color:#e4e4e4;
     color:darkslategray;
+    padding: 15px;
+    color: #939393;
+}
+.priceOffer2, .priceOffer4 {
+    font-size: 25px;
+    font-weight: bold;
+    background: #f1f1f1;;
+    color: #939393;
     padding: 15px;
 }
-.priceOffer2 {
+.priceOffer3 {
     font-size: 25px;
-    /*margin-top: 20px;*/
     font-weight: bold;
-    background:;
+    background-color:#e4e4e4;
     color:darkslategray;
     padding: 15px;
+    color: #939393;
 }
 .priceButton {
-    color: white;
-    /*width: 50px;*/
-    /*height: 60px;*/
-    padding: 10px 14px 10px 14px;
-    border-radius:20px;
-    /*display: inline-block;*/
-    font-size: 25px;
-    /*text-decoration: none;*/
+    font-size: 20px;
     text-transform: uppercase;
     border: 1px solid gray;
-
-    background-color: #00C9AA;
-    width: 200px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: uppercase;
+    background-color: #27c7ab;
+    width: 180px;
+    /*height: 50px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-bottom: 15px;*/
     text-align: center;
-    border-radius: 10px;
+    border-radius: 12px;
     line-height: 50px;
+    box-sizing:border-box;
+    bottom: 10px !important;
     position: absolute;
-    bottom: 18px;
-    left: calc(50% - 100px);
-    font-size: 20px;
-
+    left: 110px;
 }
+
+.priceButton a {
+    color: white;
+    text-decoration: none;
+}
+
+.priceOffer1 (
+    margin-top:207px;
+)
+
+/*Form contact*/
+
+.contact {
+    background-color: green;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.contactTitle {
+    width: 1200px;
+    margin: 0 auto;
+    padding:35px;
+}
+.contactTitle p {
+    border-bottom: 7px solid #24BAA0;
+    width: 360px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+ .contactTitle .container {
+     height: 570px;
+ }
+
+ .contactForm {
+     display: block;
+     float: left;
+     width: 635px;
+ }
+
+.contactForm input,
+.contactForm textarea {
+    font-family: 'ralewayregular', sans-serif;
+    width: 635px;
+}
+ .contactForm textaera {
+     resie:none;
+ }
+ .contactForm input,
+ .contactForm textarea {
+     font-size: 20px;
+     padding-left: 10px;
+     border: 1px solid #8de0d2;
+ }
+.contactForm input {
+    height: 66px;
+}
+.contactForm input::placeholder {
+    color: #cecece;
+}
+
+.contactForm textarea::placeholder{
+    color: #cecece;
+    padding-top: 15px;
+}
+
+.contact img {
+    /*float: left;*/
+    position: relative;
+    top: -20px;
+    right: 50px;
+}
+
+.checkBoxAgreement {
+    position: relative;
+    top: 50px;
+    right: 80px;
+}
+
+.checkBoxAgreement input {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 12px;
+    background: url("../images/form_ok.jpg") no-repeat center;
+}
+
+.checkBoxAgreement label {
+    display: block;
+    padding-left: 65px;
+    position: relative;
+    font-size: 19px;
+    color: #cecece;
+    /*margin: 1px 0 10px 0;*/
+}
+
+.checkBoxAgreement input::value {
+    border: 100px solid #27c7ab;
+    background: url("../images/form_ok.jpg");
+    /*padding: 100px;*/
+    /*display: none;*/
+    /*box-sizing: border-box;*/
+}
+
+
+.sendContact {
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid gray;
+    background-color: #27c7ab;
+    width: 360px;
+    height: 50px;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 50px;
+    box-sizing:border-box;
+    position: relative;
+    top: 50px;
+    right: 80px;
+}
+
+.sendContact a {
+    color: white;
+    text-decoration: none;
+}
+
 
 /*footer {*/
     /*padding: 10px 0;*/
