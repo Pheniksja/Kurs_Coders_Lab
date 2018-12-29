@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Warsztat 1</title>
+    <title>Warsztat 1+</title>
     <link href="https://www.fontsquirrel.com/fonts/raleway?q%5Bterm%5D=raleway&q%5Bsearch_check%5D=Y">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,20 +22,28 @@
 
 <section id="slider">
     <div class="container">
-        <ul>
-            <li class="slider_image"></li>
-            <li class="slider_text">
-                <h1>Sit <span class="text_logo"> on </span> our <span class="text_logo">chair</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem blanditiis corporis deleniti
-                    dolor eaque eligendi eum excepturi hic in, iure molestiae neque pariatur quisquam quo saepe sapiente
+        <div class="gallery">
+            <div class="slider_button left"><a href="#">&lt;</a></div>
+            <ul class="slider_image">
+                <li><img class="picture1" alt="black chair" src="images/black_chair.png"></li>
+                <li><img class="picture2" alt="orange chair" src="images/orange_chair.png"></li>
+                <li><img class="picture3" alt="red chair" src="images/red_chair.png"></li>
+            </ul>
+
+            <ul class="slider_text">
+                <li>
+                    <h1>Sit <span class="text_logo"> on </span> our <span class="text_logo">chair</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem blanditiis corporis deleniti dolor eaque eligendi eum excepturi hic in, iure molestiae neque pariatur quisquam quo saepe sapiente
                     veniam voluptatem?
-                </p>
-                <div id="button"><a href="#"> Zobacz wiecej </a></div>
-            </li>
-        </ul>
-        <div class="slider_before"><a href="#"></a></div>
-        <div class="slider_after"><a href="#"></a></div>
+                    </p>
+                    <div class="sliderMore"><a href="#"> Zobacz wiecej </a></div>
+                </li>
+            </ul>
+            <div class="slider_button right"><a href="#">&gt;</a></div>
+        </div>
+
     </div>
+
 </section>
 
 <section id="offer">
@@ -138,7 +146,7 @@
         </div>
     </div>
 </footer>
-
+<script src="js/app.js"></script>
 
 </body>
 </html>

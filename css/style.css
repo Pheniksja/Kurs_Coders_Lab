@@ -1,7 +1,16 @@
+/*reset css */
 * {
     margin: 0;
     padding: 0;
 }
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 
 body {
     font-family: 'ralewayregular' ,  Arial, sans-serif;
@@ -41,6 +50,7 @@ header .container ul {
 }
 header .container ul li {
     display: inline-block;
+    padding: 0 15px;
 }
 header .container ul li a {
     display: block;
@@ -59,28 +69,49 @@ header .container ul li a {
 }
 
 
-#slider .container ul {
+#slider .container .gallery{
     list-style: none;
     height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+
 }
 
-#slider  ul li {
+#slider  ul {
     width: 50%;
-    /*height: 200px;*/
 }
 
-#slider .slider_image {
-    background: url("../images/black_chair.png") no-repeat center/cover;
+img.picture1 {
+    width:720px;
+    margin-top: 40px;
+    float: left;
+    position: relative;
+}
+img.picture2{
+    width:600px;
+    margin-top: 110px;
+    left: 30px;
+    float: left;
+    position: relative;
 }
 
-#slider .slider_text {
+img.picture3 {
+    width:520px;
+    margin-top: 80px;
+    left: 30px;
+    float: left;
+    position: relative;
+}
+
+
+
+#slider ul.slider_text {
     text-align: center;
+    width: 47%;
 }
 
-#slider ul .slider_text  h1{
+#slider ul.slider_text  h1{
     text-transform: uppercase;
     padding: 85px;
     box-sizing: border-box;
@@ -91,7 +122,7 @@ header .container ul li a {
     font-weight: bold;
 }
 
-#slider ul .slider_text  p{
+#slider ul.slider_text  p{
     padding: 5px;
     box-sizing: border-box;
     font-size: 20px;
@@ -99,8 +130,7 @@ header .container ul li a {
     line-height: 30px;
 }
 
-
-#slider ul .slider_text  #button {
+#slider ul.slider_text  .sliderMore {
     background-color: rgb(116, 232, 206);
     width: 350px;
     height: 60px;
@@ -114,7 +144,7 @@ header .container ul li a {
 }
 
 
-#slider ul .slider_text #button  a {
+#slider ul.slider_text .sliderMore  a {
     color: white;
     width: 230px;
     height: 60px;
@@ -125,6 +155,49 @@ header .container ul li a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.sliderMore:hover {
+    box-shadow: 1px 5px 10px darkgrey;
+    font-weight: 700;
+    border-radius:50px;
+}
+
+
+    /*navigation in slider*/
+
+.slider_button  {
+    font-weight: lighter;
+    position: absolute;
+    color: #27c7ab;
+    text-decoration: none;
+    top: 280px;
+    z-index: 999;
+}
+.slider_button a {
+    font-weight: lighter;
+    position: absolute;
+    font-size: 100px;
+    color: #27c7ab;
+    text-decoration: none;
+}
+
+.right a {
+    /*right: -1255px;*/
+    left: 1200px;
+}
+
+.slider_button:hover {
+    text-shadow: 1px 3px 10px darkgrey;
+}
+.slider_image li{
+    display: none;
+}
+
+
+.slider_image .visible{
+    display: inline-block;
+}
+
 /*offer - */
 #offer {
     width: 100%;
