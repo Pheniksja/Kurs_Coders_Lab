@@ -182,7 +182,6 @@ img.picture3 {
 }
 
 .right a {
-    /*right: -1255px;*/
     left: 1200px;
 }
 
@@ -202,30 +201,40 @@ img.picture3 {
 #offer {
     width: 100%;
     display: flex;
-    /*padding: 50px;*/
     box-sizing: border-box;
     height: 350px;
     }
 
-#offer .container div {
+#offer .container .offer_article1, .offer_article2, .offer_article3{
     justify-content: space-between;
     width: 31%;
     height: 252px;
     border: 1px solid lightgrey;
     display: inline-block;
     margin-top: 35px;
+    float: left;
+    position: relative;
+}
+
+.offerUnderline {
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 155px;
+    padding: 15px;
+    width: 90%;
+    height: 50px;
+    transition: 0.7s all;
 }
 
 .underlineTitle {
     border-bottom: 4px solid #24BAA0;
-    width: 130px;
+    width: 150px;
+    font-weight: bold;
 }
 
 .offer_article1 {
     background-image: url("../images/box1_img.jpg") ;
     background-size: contain;
-    font-weight: bold;
-
 }
 
 .offer_article2 {
@@ -233,14 +242,17 @@ img.picture3 {
     background-size: contain;
     margin-right: 35px;
     margin-left: 35px;
-    font-weight: bold;
+
+}
+.offer_article3 {
+    padding: 10px 15px ;
+    color: darkgray;
 }
 
 #offer .container .offer_article3 .text_article3 {
     box-sizing: border-box;
     padding-top: 35px;
     font-weight: bold;
-
 }
 
 #offer .container .offer_article3 .text_article3  {
@@ -248,10 +260,17 @@ img.picture3 {
     line-height: 20px;
     margin-bottom: 35px;
 }
-.text_article3 underlineTitle{
-    width: 137px;
-    /*font-weight: bold;*/
+/*hidden the name of products*/
+
+.offer_article1 .offerUnderline:hover {
+    opacity: 0;
+    visibility: hidden;
 }
+.offer_article2 .offerUnderline:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 /*priceList*/
 
