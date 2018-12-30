@@ -246,13 +246,12 @@ img.picture3 {
 }
 .offer_article3 {
     padding: 10px 15px ;
-    color: darkgray;
+    color: darkslategray;
 }
 
 #offer .container .offer_article3 .text_article3 {
     box-sizing: border-box;
     padding-top: 35px;
-    font-weight: bold;
 }
 
 #offer .container .offer_article3 .text_article3  {
@@ -302,18 +301,43 @@ img.picture3 {
     border: 1px solid lightgrey;
     display: inline-block;
     text-align: center;
-    margin-top: 80px;
     background-color: white;
-    margin-top: 25px;
+    margin-top: 70px;
     position: relative;
+}
+.circle {
+    border:1px solid  #d6d5d5;
+    width: 58px;
+    height:58px;
+    border-radius: 50%;
+    left: calc(50% - 15px);
+    margin-left: -20px;
+    top: -40px;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+}
+
+.circle:before { /*biala kólka, i czarna */
+    content:'';
+    position: absolute;
+    left: 50%;
+    margin-left: -17px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #d6d5d5;
+    background: #d6d5d5;
 }
 
 .priceBox h2 {
     text-transform: uppercase;
     color: #24BAA0;
     font-size: 25px;
-    margin-top: 27px;
+    margin-top: 37px;
     font-weight: bold;
+    /*padding: 30px;*/
 }
 .price {
     left: 117px;
@@ -395,7 +419,7 @@ img.picture3 {
 /*Form contact*/
 
 .contact {
-    background-color: green;
+    background-color: lightgrey;
     width: 100%;
     height: 600px;
     box-sizing: border-box;
