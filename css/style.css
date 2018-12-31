@@ -305,6 +305,10 @@ img.picture3 {
     margin-top: 70px;
     position: relative;
 }
+/*create other color in second price-list */
+.priceList .container .priceBox:nth-of-type(2) {
+    background:#24BAA0;
+}
 .circle {
     border:1px solid  #d6d5d5;
     width: 58px;
@@ -317,8 +321,13 @@ img.picture3 {
     background-color: white;
     padding: 5px;
 }
+/*create other color in second price-list */
+.priceBox:nth-of-type(2) .circle {
+    background:  #24BAA0;
+    border: 1px solid  #24BAA0;
+}
 
-.circle:before { /*biala kólka, i czarna */
+.circle:before { /* gray circle in white circle */
     content:'';
     position: absolute;
     left: 50%;
@@ -331,24 +340,42 @@ img.picture3 {
     background: #d6d5d5;
 }
 
+/*create other color in second price-list */
+.priceBox:nth-of-type(2) .circle:before {
+    background-color: #f1f1f1;
+    border: 2px solid #24BAA0;
+}
+
 .priceBox h2 {
     text-transform: uppercase;
     color: #24BAA0;
     font-size: 25px;
     margin-top: 37px;
     font-weight: bold;
-    /*padding: 30px;*/
 }
+/*create other color in second price-list */
+.priceBox:nth-of-type(2) h2 {
+    color: white;
+}
+
 .price {
     left: 117px;
     top: 80px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 4px solid lightgrey;
+    border: 2px solid lightgrey;
     padding: 20px;
     position: absolute;
+    background:white;
 }
+
+/*create other color in second price-list */
+.priceBox:nth-of-type(2) .price{
+    border: 2px solid #24BAA0;
+}
+
+
 .price p:first-child {
     font-size: 40px;
     font-weight: bold;
@@ -369,7 +396,6 @@ img.picture3 {
     margin-top: 200px;
     font-weight: bold;
     background-color:#e4e4e4;
-    color:darkslategray;
     padding: 15px;
     color: #939393;
 }
@@ -384,7 +410,6 @@ img.picture3 {
     font-size: 25px;
     font-weight: bold;
     background-color:#e4e4e4;
-    color:darkslategray;
     padding: 15px;
     color: #939393;
 }
@@ -394,10 +419,8 @@ img.picture3 {
     border: 1px solid gray;
     background-color: #27c7ab;
     width: 180px;
-    /*height: 50px;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*margin-bottom: 15px;*/
+    height: 50px;
+    margin-bottom: 15px;
     text-align: center;
     border-radius: 12px;
     line-height: 50px;
@@ -405,16 +428,27 @@ img.picture3 {
     bottom: 10px !important;
     position: absolute;
     left: 110px;
+    border: 1px solid  #27c7ab;
+}
+
+/*create other color in second price-list */
+.priceBox:nth-of-type(2) .priceButton{
+    background-color: white;
+}
+
+.priceButton:hover {
+    box-shadow: 1px 5px 10px darkgrey;
+    font-weight: 700;
+    border-radius:10px;
 }
 
 .priceButton a {
     color: white;
     text-decoration: none;
 }
-
-.priceOffer1 (
-    margin-top:207px;
-)
+.priceBox:nth-of-type(2) .priceButton a{
+    color: #24BAA0;
+}
 
 /*Form contact*/
 
