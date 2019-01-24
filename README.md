@@ -1,3 +1,2 @@
-# Kurs_Coders_Lab
 
-Create the website using HTML, CSS, JavaScript. 
+Create the website using HTML, CSS and JavaScript (slider, hidden some elements). 
